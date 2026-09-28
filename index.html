@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — AI &amp; Data Engineer</title>
+  <meta name="description" content="Portfolio of Your Name, an AI & data engineer building LLM pipelines, MCP servers, and the data infrastructure behind them.">
+  <meta name="author" content="Your Name">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Name — AI & Data Engineer">
+  <meta property="og:description" content="I build AI pipelines, MCP servers, and the data infrastructure behind them.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Apply a saved theme before first paint so the page never flashes the wrong colors.
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Your Name — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="icon"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7.2 12h4.3M11.5 12 16.8 6.8M11.5 12l5.3 5.2"/></svg>
+        </span>
+        <span class="brand-name">Your Name</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <svg viewBox="0 0 24 24" class="icon icon-moon" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg viewBox="0 0 24 24" class="icon icon-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────────────────── Hero ───────────────────────── -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>AI &amp; Data Engineer</p>
+          <h1 id="hero-title">
+            Hi, I'm Your Name.
+            <span class="muted">I build AI pipelines, MCP servers, and the data infrastructure behind them.</span>
+          </h1>
+          <p class="lead">
+            I turn messy, real-world data into reliable systems that language models can actually use —
+            from ingestion and evaluation to production serving.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">
+              View projects
+              <svg viewBox="0 0 24 24" class="icon icon-arrow" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="pipeline" role="img" aria-label="Illustration of a data pipeline with five stages: sources, ingest, enrich, store, and serve.">
+          <div class="pipeline-bar">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="pipeline-file">pipeline.yaml</span>
+            <span class="pipeline-status"><span class="pulse"></span>running</span>
+          </div>
+          <ol class="pipeline-steps">
+            <li class="step" style="--i:0"><span class="step-node"></span><span class="step-n">01</span><span class="step-name">sources</span><span class="step-meta">pdf · api · postgres</span></li>
+            <li class="step" style="--i:1"><span class="step-node"></span><span class="step-n">02</span><span class="step-name">ingest</span><span class="step-meta">parse · chunk · dedupe</span></li>
+            <li class="step" style="--i:2"><span class="step-node"></span><span class="step-n">03</span><span class="step-name">enrich</span><span class="step-meta">llm extract · embed</span></li>
+            <li class="step" style="--i:3"><span class="step-node"></span><span class="step-n">04</span><span class="step-name">store</span><span class="step-meta">warehouse · pgvector</span></li>
+            <li class="step" style="--i:4"><span class="step-node"></span><span class="step-n">05</span><span class="step-name">serve</span><span class="step-meta">mcp server → assistants</span></li>
+          </ol>
+          <div class="pipeline-foot">
+            <span class="ok">✓ 5/5 stages healthy</span>
+            <span>last run: just now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── About ───────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label"><span class="num">01</span>About</p>
+          <h2 id="about-title">Engineer at the intersection of AI and data.</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I design and build the systems that give large language models <strong>the right context at the right time</strong>:
+              pipelines that turn raw documents and events into clean, structured data, platforms that keep that data
+              trustworthy, and MCP servers that let AI assistants use it safely.
+            </p>
+            <p>
+              I care most about the unglamorous parts that make AI products work in production —
+              <strong>schemas and contracts, evaluation, observability, cost control, and access boundaries</strong>.
+              I prefer simple architectures, well-tested code, and documentation the next engineer will thank me for.
+            </p>
+            <p>
+              Lately I've been focused on agentic workflows, context engineering, and connecting AI assistants to
+              real business data through the Model Context Protocol.
+            </p>
+          </div>
+
+          <div class="toolbox reveal" aria-label="Skills and tools">
+            <div class="tool-group">
+              <h3>AI &amp; LLMs</h3>
+              <ul class="chips">
+                <li>LLM APIs</li><li>RAG</li><li>Embeddings</li><li>Evals</li><li>Agents</li><li>Prompt design</li>
+              </ul>
+            </div>
+            <div class="tool-group">
+              <h3>Integration</h3>
+              <ul class="chips">
+                <li>Model Context Protocol</li><li>FastAPI</li><li>REST</li><li>OAuth 2.1</li><li>Webhooks</li>
+              </ul>
+            </div>
+            <div class="tool-group">
+              <h3>Data</h3>
+              <ul class="chips">
+                <li>SQL</li><li>dbt</li><li>Airflow</li><li>Kafka</li><li>Spark</li><li>BigQuery</li><li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="tool-group">
+              <h3>Platform</h3>
+              <ul class="chips">
+                <li>Python</li><li>TypeScript</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>GitHub Actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ul class="principles reveal" aria-label="How I work">
+          <li>
+            <span class="principle-n">/01</span>
+            <h3>Reliability over novelty</h3>
+            <p>Idempotent jobs, typed contracts, and graceful failure modes come before shiny new features.</p>
+          </li>
+          <li>
+            <span class="principle-n">/02</span>
+            <h3>Measure what matters</h3>
+            <p>Evals, data-quality checks, and tracing are wired in from day one — not bolted on later.</p>
+          </li>
+          <li>
+            <span class="principle-n">/03</span>
+            <h3>Secure by default</h3>
+            <p>Least-privilege access and a clear audit trail for every system an AI model can touch.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── Projects ───────────────────────── -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label"><span class="num">02</span>Projects</p>
+          <h2 id="projects-title">Selected work</h2>
+          <p>
+            Three systems that show how I approach AI engineering end to end: getting data in,
+            keeping it trustworthy, and exposing it safely to models.
+          </p>
+        </header>
+
+        <div class="projects">
+          <!-- Project 1: AI pipeline -->
+          <article class="project reveal" aria-labelledby="project-1">
+            <div class="project-main">
+              <div class="project-meta">
+                <span class="project-index">01</span>
+                <span class="project-tag">
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
+                  AI Pipeline
+                </span>
+              </div>
+              <h3 id="project-1">LLM Document Intelligence Pipeline</h3>
+              <p class="project-desc">
+                An end-to-end pipeline that turns unstructured documents — PDFs, emails, and web pages — into
+                validated, structured data and searchable embeddings. Built to run unattended: every stage is
+                idempotent, observable, and covered by automated evaluations.
+              </p>
+              <p class="flow" aria-label="Pipeline flow">
+                <span>ingest</span><span class="arrow" aria-hidden="true">→</span>
+                <span>parse &amp; chunk</span><span class="arrow" aria-hidden="true">→</span>
+                <span>llm extract</span><span class="arrow" aria-hidden="true">→</span>
+                <span>validate</span><span class="arrow" aria-hidden="true">→</span>
+                <span>embed</span><span class="arrow" aria-hidden="true">→</span>
+                <span>index</span>
+              </p>
+              <div class="project-links">
+                <!-- TODO: point this at the project's repository -->
+                <a class="text-link" href="https://github.com/Grocian" target="_blank" rel="noopener">
+                  View on GitHub
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-side">
+              <h4>Highlights</h4>
+              <ul class="highlights">
+                <li>Schema-first extraction — LLM outputs are validated against typed models and retried with targeted feedback when they fail.</li>
+                <li>Evaluation harness with golden datasets that tracks accuracy, latency, and cost per document on every change.</li>
+                <li>Resumable batch and streaming modes with deduplication, backoff, and dead-letter handling.</li>
+                <li>End-to-end tracing of prompts, responses, and token spend for debugging and cost control.</li>
+              </ul>
+              <h4>Stack</h4>
+              <ul class="chips chips-mono">
+                <li>Python</li><li>Pydantic</li><li>LLM APIs</li><li>Prefect</li><li>PostgreSQL</li><li>pgvector</li><li>Docker</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2: MCP server -->
+          <article class="project reveal" aria-labelledby="project-2">
+            <div class="project-main">
+              <div class="project-meta">
+                <span class="project-index">02</span>
+                <span class="project-tag">
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 22v-5M9 8V2M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>
+                  MCP Server
+                </span>
+              </div>
+              <h3 id="project-2">MCP Server for Internal Data &amp; Tools</h3>
+              <p class="project-desc">
+                A Model Context Protocol server that gives AI assistants like Claude safe, structured access to
+                internal data — warehouse tables, documentation, and operational tools — without handing over raw
+                credentials or unrestricted SQL.
+              </p>
+              <p class="flow" aria-label="Request flow">
+                <span>assistant</span><span class="arrow" aria-hidden="true">→</span>
+                <span>mcp client</span><span class="arrow" aria-hidden="true">→</span>
+                <span>tools · resources</span><span class="arrow" aria-hidden="true">→</span>
+                <span>policy layer</span><span class="arrow" aria-hidden="true">→</span>
+                <span>data sources</span>
+              </p>
+              <div class="project-links">
+                <!-- TODO: point this at the project's repository -->
+                <a class="text-link" href="https://github.com/Grocian" target="_blank" rel="noopener">
+                  View on GitHub
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-side">
+              <h4>Highlights</h4>
+              <ul class="highlights">
+                <li>Typed tools with JSON Schema inputs, plus resources and prompt templates for common workflows.</li>
+                <li>Guardrails built in: read-only query validation, row limits, timeouts, and per-user permissions.</li>
+                <li>OAuth-based authentication and an audit log entry for every tool call.</li>
+                <li>Runs locally over stdio or remotely over Streamable HTTP, packaged as a single container.</li>
+              </ul>
+              <h4>Stack</h4>
+              <ul class="chips chips-mono">
+                <li>TypeScript</li><li>MCP SDK</li><li>Node.js</li><li>Zod</li><li>PostgreSQL</li><li>OAuth 2.1</li><li>Docker</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3: Data infrastructure -->
+          <article class="project reveal" aria-labelledby="project-3">
+            <div class="project-main">
+              <div class="project-meta">
+                <span class="project-index">03</span>
+                <span class="project-tag">
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                  Data Infrastructure
+                </span>
+              </div>
+              <h3 id="project-3">Cloud Data Platform</h3>
+              <p class="project-desc">
+                A modern ELT platform that consolidates operational databases, event streams, and SaaS APIs into a
+                single, well-modeled warehouse — the foundation that analytics, ML features, and AI applications
+                are built on.
+              </p>
+              <p class="flow" aria-label="Data flow">
+                <span>sources</span><span class="arrow" aria-hidden="true">→</span>
+                <span>cdc · ingestion</span><span class="arrow" aria-hidden="true">→</span>
+                <span>warehouse</span><span class="arrow" aria-hidden="true">→</span>
+                <span>dbt models</span><span class="arrow" aria-hidden="true">→</span>
+                <span>bi · ml · ai</span>
+              </p>
+              <div class="project-links">
+                <!-- TODO: point this at the project's repository -->
+                <a class="text-link" href="https://github.com/Grocian" target="_blank" rel="noopener">
+                  View on GitHub
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-side">
+              <h4>Highlights</h4>
+              <ul class="highlights">
+                <li>Change-data-capture and scheduled ingestion into a layered raw → staging → marts warehouse model.</li>
+                <li>dbt transformations with tests, documentation, and data contracts enforced in CI.</li>
+                <li>Orchestration with retries, SLAs, and alerting; data-quality checks gate downstream jobs.</li>
+                <li>All infrastructure defined as code, with reproducible dev, staging, and production environments.</li>
+              </ul>
+              <h4>Stack</h4>
+              <ul class="chips chips-mono">
+                <li>SQL</li><li>dbt</li><li>Airflow</li><li>Kafka</li><li>Debezium</li><li>BigQuery</li><li>Terraform</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── Contact ───────────────────────── -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-main">
+            <p class="section-label"><span class="num">03</span>Contact</p>
+            <h2 id="contact-title">Let's build something reliable.</h2>
+            <p class="contact-text">
+              I'm open to conversations about AI engineering, data platforms, and MCP integrations —
+              full-time roles, freelance projects, or just trading notes. Email is the fastest way to reach me.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:hello@example.com">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                hello@example.com
+              </a>
+              <button class="btn btn-ghost copy-btn" type="button" data-copy="hello@example.com">
+                <svg viewBox="0 0 24 24" class="icon icon-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <svg viewBox="0 0 24 24" class="icon icon-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-copy-label aria-live="polite">Copy email</span>
+              </button>
+            </div>
+          </div>
+
+          <ul class="socials" aria-label="Elsewhere">
+            <li>
+              <a href="https://github.com/Grocian" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" class="icon icon-fill" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                <span class="social-name">GitHub</span>
+                <span class="social-handle">@Grocian</span>
+                <svg viewBox="0 0 24 24" class="icon social-arrow" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: replace with your LinkedIn profile URL -->
+              <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <span class="social-name">LinkedIn</span>
+                <span class="social-handle">/in/your-handle</span>
+                <svg viewBox="0 0 24 24" class="icon social-arrow" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@example.com">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span class="social-name">Email</span>
+                <span class="social-handle">hello@example.com</span>
+                <svg viewBox="0 0 24 24" class="icon social-arrow" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Your Name. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
